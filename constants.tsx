@@ -431,7 +431,7 @@ My professional background is rooted in applied engineering and open-source meth
   experience: [
     {
       id: "codaltec-lead",
-      role: "Technical Lead & Machine Leaning Developer",
+      role: "Technical Lead & Machine Learning Developer",
       company: (
         <>
           <LinkPreview href="https://codaltec.com/" className="hover:text-primary hover:underline transition-colors">CODALTEC - High Technology Corporation for Defense</LinkPreview>
@@ -452,43 +452,43 @@ My professional background is rooted in applied engineering and open-source meth
 (November 2023 – January 2024)
 
 **Functions**
-• Designed and optimized tiling and preprocessing pipelines for large-scale satellite imagery.
-• Developed backend components in **Python** and constructed **REST APIs** to integrate preliminary AI models.
-• Supervised satellite data processing and airborne sensor tasks within **GIS** software environments.
-• Coordinated quality validation for image annotation and prepared scientific documentation for system architecture.
+• Design and optimize tiling and preprocessing pipelines for large-scale satellite imagery.
+• Develop backend components in **Python** and construct **REST APIs** to integrate preliminary AI models.
+• Supervise satellite data processing and airborne sensor tasks within **GIS** software environments.
+• Coordinate quality validation for image annotation and prepare scientific documentation for system architecture.
 
 **Achievements**
-• **Resolved Geometric Discontinuities:** Developed a custom algorithm with adjustable tile overlapping and geometric merge logic, eliminating gaps between adjacent detection masks in production rasters.
-• **Pipeline Standardization:** Successfully corrected segmentation gaps, ensuring continuous and reliable polygon generation for large-scale geospatial datasets.
+• Developed a custom algorithm with adjustable tile overlapping and geometric merge logic, eliminating gaps between adjacent detection masks in production rasters.
+• Successfully corrected segmentation gaps, ensuring continuous and reliable polygon generation for large-scale geospatial datasets.
 
 **Stage 2: Scope Expansion | Mining, Deforestation & Performance**
 (February 2024 – October 2024)
 
 **Functions**
-• Led a cross-functional team to expand software capabilities from Mining detection to regional **Deforestation** analysis in the Amazon region.
-• Evaluated and benchmarked modern detection/segmentation architectures using **PyTorch**, tracking experiments and model versions with **MLflow**.
-• Engineered high-efficiency functions optimized for edge execution and resource-constrained hardware.
-• Managed multi-sensor data integration (SkySat, GeoEye, PlanetScope, WorldView 2/3, ADS80/100).
+• Lead a cross-functional team to expand software capabilities from Mining detection to regional **Deforestation** analysis in the Amazon region.
+• Evaluate and benchmark modern detection/segmentation architectures using **PyTorch**, tracking experiments and model versions with **MLflow**.
+• Engineer high-efficiency functions optimized for edge execution and resource-constrained hardware.
+• Manage multi-sensor data integration (SkySat, GeoEye, PlanetScope, WorldView 2/3, ADS80/100).
 
 **Achievements**
-• **Performance Optimization:** Achieved a **2.7x increase** in inference throughput by implementing a **Producer-Consumer multiprocessing** prediction pipeline.
-• **Technical Innovation:** Implemented real-time **16-bit to 8-bit** conversion, eliminating manual pre-processing and enabling direct processing of **GeoTIFFs**.
-• **Model Evolution:** Created specialized, lightweight models per sensor type using architectures such as **[YOLOv7-v11](https://docs.ultralytics.com/#yolo-a-brief-history)**, **[RT-DETR](https://docs.ultralytics.com/models/rtdetr/)**, **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)**, and **[U-Net](https://github.com/sevakon/unet-keras)**.
-• **Environmental Impact:** Developed temporal analysis modules to track forest loss and recovery over time.
+• Achieved a **2.7x increase** in inference throughput by implementing a **Producer-Consumer multiprocessing** prediction pipeline.
+• Implemented real-time **16-bit to 8-bit** conversion, eliminating manual preprocessing and enabling direct processing of **GeoTIFFs**.
+• Created specialized, lightweight models per sensor type using architectures such as **[YOLOv7-v11](https://docs.ultralytics.com/#yolo-a-brief-history)**, **[RT-DETR](https://docs.ultralytics.com/models/rtdetr/)**, **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)**, and **[U-Net](https://github.com/sevakon/unet-keras)**.
+• Developed temporal analysis modules to track forest loss and recovery over time.
 
 **Stage 3: Hybrid Methodologies & Operational Automation**
 (November 2024 – Present)
 
 **Functions**
-• Designing a hybrid neural network methodology to identify large linear infrastructure (paths) spanning multiple tiles.
-• Engineering **Python** backend endpoints and managing **MongoDB** database architecture for complex data structures.
-• Overseeing containerized deployments using **Docker Compose** and coordinating seamless integration with the Frontend and DevOps teams.
-• Managing the end-to-end development lifecycle for new system features and semantic context modules.
+• Design a hybrid neural network methodology to identify large linear infrastructure (paths) spanning multiple tiles.
+• Engineer **Python** backend endpoints and manage **MongoDB** database architecture for complex data structures.
+• Oversee containerized deployments using **Docker Compose** and coordinate seamless integration with the Frontend and DevOps teams.
+• Manage the end-to-end development lifecycle for new system features and semantic context modules.
 
 **Achievements**
-• **Context Loss Solution:** Co-developed a hybrid methodology combining **[YOLOv11](https://docs.ultralytics.com/models/yolo11/)** (ROI detection) and **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** (Context-aware Semantic Segmentation), successfully solving context loss in objects spanning multiple tiles.
-• **Workflow Automation:** Engineered an automated reporting system (backend **PPTX** generation), reducing analyst workload from **days/weeks** to just **minutes/hours**.
-• **System Architecture:** Standardized deliverables and operational workflows, significantly increasing the department's analytical capacity.`,
+• Co-developed a hybrid methodology combining **[YOLOv11](https://docs.ultralytics.com/models/yolo11/)** (ROI detection) and **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** (Context-aware Semantic Segmentation), successfully solving context loss in objects spanning multiple tiles.
+• Engineered an automated reporting system (backend **PPTX** generation), reducing analyst workload from **days/weeks** to just **minutes/hours**.
+• Standardized deliverables and operational workflows, significantly increasing the department's analytical capacity.`,
       media: CODALTEC_LEAD_MEDIA,
       technologies: ["Python", "YOLOv11", "SegFormer", "MongoDB", "Flask", "Docker", "PyTorch", "RT-DETR"],
       references: [
@@ -506,7 +506,7 @@ My professional background is rooted in applied engineering and open-source meth
         </>
       ),
       period: "Jul 2023 — Aug 2022",
-      description: "Machine Learning Developer responsible for the end-to-end lifecycle of **Deep Learning** solutions for precision agriculture, covering data engineering, annotation strategy, model development, optimization, and support for production deployment. Worked with **Python** and **TensorFlow** to design scalable pipelines for large-scale drone imagery, supervised data quality processes, authored comprehensive technical documentation, and collaborated with backend, infrastructure, and DevOps teams to operationalize trained models.",
+      description: "Machine Learning Developer responsible for the end-to-end lifecycle of **Deep Learning** solutions for precision agriculture, covering data engineering, annotation strategy, model development, optimization, and support for production deployment. Work with **Python** and **TensorFlow** to design scalable pipelines for large-scale drone imagery, supervise data quality processes, author comprehensive technical documentation, and collaborate with backend, infrastructure, and DevOps teams to operationalize trained models.",
       details: `**Functions**
 • Define, train, and optimize neural network models for **semantic segmentation** and **object detection** using **Python** and **TensorFlow**, ensuring high performance through systematic testing and debugging.
 • Design data acquisition strategies by engineering **SQL** queries on **SQL Server** databases hosted on **Azure** infrastructure to filter and retrieve historical **sub-metric drone imagery** (**GeoTIFF RGB**) based on plantation phenology criteria (age, weed coverage, acquisition date).
@@ -550,7 +550,7 @@ My professional background is rooted in applied engineering and open-source meth
         </>
       ),
       period: "Aug 2022 — Apr 2021",
-      description: "Generated, designed and tested computer-vision functionalities, deployment environments and hardware infrastructure for applying artificial neural networks to geospatial and satellite data. Explored and supervised satellite-data processing and airborne-sensor tasks using **Python** and GIS tools (**QGIS**, **ArcGIS Pro**). Produced scientific documentation to support research and led knowledge-transfer sessions to train research-center staff in **Machine Learning** and **Deep Learning**.",
+      description: "Generate, design and test computer vision functionalities, deployment environments and hardware infrastructure for applying artificial neural networks to geospatial and satellite data. Explore and supervise satellite data processing and airborne sensor tasks using **Python** and GIS tools (**QGIS**, **ArcGIS Pro**). Produce scientific documentation to support research and lead knowledge-transfer sessions to train research-center staff in **Machine Learning** and **Deep Learning**.",
       details: `**Functions**
 • Conduct research and feasibility studies on applying **ML** and **Deep Learning** techniques to detect open-pit gold mining patterns (land removal, chemical pools, machinery, dredges), progressing from **ML clustering** baselines to **CNN**-based approaches.
 • Evaluate, benchmark and compare instance/segmentation architectures (**[Mask R-CNN](https://github.com/matterport/Mask_RCNN)** implemented in **TensorFlow** vs **[YOLACT](https://github.com/dbolya/yolact)** implemented in **PyTorch**), executing **transfer learning**, **fine-tuning** and controlled experiments to assess accuracy, scalability and deployment constraints.
@@ -642,7 +642,7 @@ My professional background is rooted in applied engineering and open-source meth
       title: "Agrobot (Agricultural Robot)",
       year: "2019",
       academicContext: "bachelor",
-      description: "Design and implementation of Mobile robot for the physical characterization of Duranta Arbustives to help the identification of the Nysius Ericae pest on the nursery garden of Universidad Autónoma de Occidente: Developed a land robot using the concurrent design methodology. SolidWorks software was used for the design, carrying out stress analysis with finite elements. To teleoperate it, the ROS middleware was used, which receives the user's commands through an SSH connection or through Bluetooth. Based on these inputs, the corresponding linear and angular velocities are published and transformed into angular velocities for each wheel using the robot's direct and inverse kinematics (differential type). The stage of detection of the pest is under development but approximations have been made using image processing with OpenCV.",
+      description: "Design and implementation of a mobile robot for the physical characterization of Duranta shrubs to help in the identification of the Nysius Ericae pest in the nursery garden of the Universidad Autónoma de Occidente: Developed a land robot using the concurrent design methodology. SolidWorks software was used for the design, carrying out stress analysis with finite elements. To teleoperate it, the ROS middleware was used, which receives the user's commands through an SSH connection or through Bluetooth. Based on these inputs, the corresponding linear and angular velocities are published and transformed into angular velocities for each wheel using the robot's direct and inverse kinematics (differential type). The stage of detection of the pest is under development but approximations have been made using image processing with OpenCV.",
       technologies: ["ROS", "SolidWorks", "Python", "OpenCV", "Linux", "C++", "Rviz", "Gazebo", "YAML"],
       media: AGROBOT_MEDIA,
       links: [
@@ -656,7 +656,7 @@ My professional background is rooted in applied engineering and open-source meth
       year: "2020",
       repoUrl: "https://www.researchgate.net/publication/347270395_REDESIGN_OF_CHIMUELO_LAND_EXPLORATION_VEHICLE_FOR_GUIDANCE_WORK_IN_THE_LABORATORIES_OF_BASEMENTS_2_OF_THE_UNIVERSIDAD_AUTONOMA_DE_OCCIDENTE",
       academicContext: "bachelor",
-      description: "Starting from a disused robot from the university's robotics research seedbed, a robotic perception system was proposed to provide computational vision to the robot. For this, a depth camera was used to obtain a point cloud which is processed RTAB-Map library for ROS and displayed in Rviz. The robot is capable of making a 3D map of the working environment and then being able to locate itself in it, extracting characteristics from the point cloud and using a particle filter. The techniques developed in this project are general, so they can be implemented in other robots or systems. All renders were done using SolidWorks.",
+      description: "Starting from a disused robot from the university's robotics research seedbed, a robotic perception system was proposed to provide computational vision to the robot. For this, a depth camera was used to obtain a point cloud which is processed by the RTAB-Map library for ROS and displayed in Rviz. The robot is capable of making a 3D map of the working environment and then being able to locate itself in it, extracting characteristics from the point cloud and using a particle filter. The techniques developed in this project are general, so they can be implemented in other robots or systems. All renders were done using SolidWorks.",
       technologies: ["ROS", "RTAB-Map", "SolidWorks", "Computer Vision", "Rviz", "C++", "Python", "YAML", "Linux"],
       media: CHIMUELO_MEDIA
     },
@@ -704,7 +704,7 @@ const DATA_ES: ResumeData = {
     { label: "Ingeniero Mecatrónico", url: URLS.mechatronics },
     { label: "Especialista en IA", url: URLS.aiSpecialist },
     { label: "Robótica", url: URLS.robotics },
-    { label: "Visión por Computador", url: URLS.computerVision },
+    { label: "Visión por Computadora", url: URLS.computerVision },
     { label: "Deep Learning", url: URLS.deepLearning },
     { label: "CAD", url: URLS.cad }
   ],
@@ -744,43 +744,43 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
 (Noviembre 2023 – Enero 2024)
 
 **Funciones**
-• Diseñé y optimicé pipelines de teselado y preprocesamiento para imágenes satelitales a gran escala.
-• Desarrollé componentes backend en **Python** y construí **APIs REST** para integrar modelos preliminares de IA.
-• Supervisé el procesamiento de datos satelitales y tareas de sensores aerotransportados dentro de entornos de software **GIS**.
-• Coordiné la validación de calidad para la anotación de imágenes y preparé documentación científica para la arquitectura del sistema.
+• Diseñar y optimizar pipelines de teselado y preprocesamiento para imágenes satelitales a gran escala.
+• Desarrollar componentes backend en **Python** y construir **APIs REST** para integrar modelos preliminares de IA.
+• Supervisar el procesamiento de datos satelitales y tareas de sensores aerotransportados dentro de entornos de software **GIS**.
+• Coordinar la validación de calidad para la anotación de imágenes y preparar documentación científica para la arquitectura del sistema.
 
 **Logros**
-• **Discontinuidades Geométricas Resueltas:** Desarrollé un algoritmo personalizado con superposición de teselas ajustable y lógica de fusión geométrica, eliminando brechas entre máscaras de detección adyacentes en rasters de producción.
-• **Estandarización del Pipeline:** Corregí exitosamente las brechas de segmentación, asegurando la generación continua y confiable de polígonos para datasets geoespaciales masivos.
+• Desarrollé un algoritmo personalizado con superposición de teselas ajustable y lógica de fusión geométrica, eliminando brechas entre máscaras de detección adyacentes en rásteres de producción.
+• Corregí exitosamente las brechas de segmentación, asegurando la generación continua y confiable de polígonos para datasets geoespaciales masivos.
 
 **Etapa 2: Expansión de Alcance | Minería, Deforestación y Rendimiento**
 (Febrero 2024 – Octubre 2024)
 
 **Funciones**
-• Lideré un equipo multifuncional para expandir las capacidades del software desde la detección de Minería hacia el análisis regional de **Deforestación** en la región amazónica.
-• Evalué y realicé benchmarking de arquitecturas modernas de detección/segmentación usando **PyTorch**, rastreando experimentos y versiones de modelos con **MLflow**.
-• Realicé ingeniería de funciones de alta eficiencia optimizadas para ejecución en el borde (edge) y hardware con recursos limitados.
-• Gestioné la integración de datos multi-sensor (SkySat, GeoEye, PlanetScope, WorldView 2/3, ADS80/100).
+• Liderar un equipo multifuncional para expandir las capacidades del software desde la detección de Minería hacia el análisis de **Deforestación** en la región amazónica de Colombia.
+• Evaluar y realizar benchmarking de arquitecturas modernas de detección/segmentación usando **PyTorch**, rastreando experimentos y versiones de modelos con **MLflow**.
+• Realizar ingeniería de funciones de alta eficiencia optimizadas para ejecución en el borde (edge) y hardware con recursos limitados.
+• Gestionar la integración de datos multisensor (SkySat, GeoEye, PlanetScope, WorldView 2/3, ADS80/100).
 
 **Logros**
-• **Optimización de Rendimiento:** Logré un **aumento de 2.7x** en el rendimiento de inferencia implementando un pipeline de predicción **multiprocesamiento Productor-Consumidor**.
-• **Innovación Técnica:** Implementé la conversión en tiempo real de **16-bit a 8-bit**, eliminando el preprocesamiento manual y habilitando el procesamiento directo de **GeoTIFFs**.
-• **Evolución de Modelos:** Creé modelos especializados y ligeros por tipo de sensor utilizando arquitecturas como **[YOLOv7-v11](https://docs.ultralytics.com/#yolo-a-brief-history)**, **[RT-DETR](https://docs.ultralytics.com/models/rtdetr/)**, **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** y **[U-Net](https://github.com/sevakon/unet-keras)**.
-• **Impacto Ambiental:** Desarrollé módulos de análisis temporal para rastrear la pérdida y recuperación de bosque a lo largo del tiempo.
+• Logré un **aumento de 2.7x** en el rendimiento de inferencia implementando un pipeline de predicción **multiprocesamiento Productor-Consumidor**.
+• Implementé la conversión en tiempo real de **16-bit a 8-bit**, eliminando el preprocesamiento manual y habilitando el procesamiento directo de **GeoTIFFs**.
+• Creé modelos especializados y ligeros por tipo de sensor utilizando arquitecturas como **[YOLOv7-v11](https://docs.ultralytics.com/#yolo-a-brief-history)**, **[RT-DETR](https://docs.ultralytics.com/models/rtdetr/)**, **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** y **[U-Net](https://github.com/sevakon/unet-keras)**.
+• Desarrollé módulos de análisis temporal para rastrear la pérdida y recuperación de bosque a lo largo del tiempo.
 
 **Etapa 3: Metodologías Híbridas y Automatización Operacional**
 (Noviembre 2024 – Presente)
 
 **Funciones**
-• Diseñando una metodología de red neuronal híbrida para identificar gran infraestructura lineal (caminos) que abarca múltiples teselas.
-• Ingeniería de endpoints backend en **Python** y gestión de arquitectura de base de datos **MongoDB** para estructuras de datos complejas.
-• Supervisando despliegues contenerizados usando **Docker Compose** y coordinando la integración fluida con los equipos de Frontend y DevOps.
-• Gestionando el ciclo de vida de desarrollo de extremo a extremo para nuevas características del sistema y módulos de contexto semántico.
+• Diseñar una metodología de red neuronal híbrida para identificar gran infraestructura lineal (caminos) que abarca múltiples teselas.
+• Realizar ingeniería de endpoints backend en **Python** y gestión de arquitectura de base de datos **MongoDB** para estructuras de datos complejas.
+• Supervisar despliegues contenerizados usando **Docker Compose** y coordinar la integración fluida con los equipos de Frontend y DevOps.
+• Gestionar el ciclo de vida de desarrollo de extremo a extremo para nuevas características del sistema y módulos de contexto semántico.
 
 **Logros**
-• **Solución de Pérdida de Contexto:** Co-desarrollé una metodología híbrida combinando **[YOLOv11](https://docs.ultralytics.com/models/yolo11/)** (Detección de ROI) y **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** (Segmentación Semántica consciente del contexto), resolviendo exitosamente la pérdida de contexto en objetos que abarcan múltiples teselas.
-• **Automatización de Flujo de Trabajo:** Diseñé un sistema de reporte automatizado (generación backend de **PPTX**), reduciendo la carga de trabajo del analista de **días/semanas** a solo **minutos/horas**.
-• **Arquitectura del Sistema:** Estandaricé entregables y flujos de trabajo operativos, aumentando significativamente la capacidad analítica del departamento.`,
+• Co-desarrollé una metodología híbrida combinando **[YOLOv11](https://docs.ultralytics.com/models/yolo11/)** (Detección de ROI) y **[SegFormer](https://huggingface.co/docs/transformers/model_doc/segformer)** (Segmentación Semántica consciente del contexto), resolviendo exitosamente la pérdida de contexto en objetos que abarcan múltiples teselas.
+• Diseñé un sistema de reporte automatizado (generación backend de **PPTX**), reduciendo la carga de trabajo del analista de **días/semanas** a solo **minutos/horas**.
+• Estandaricé entregables y flujos de trabajo operativos, aumentando significativamente la capacidad analítica del departamento.`,
       media: CODALTEC_LEAD_MEDIA,
       technologies: ["Python", "YOLOv11", "SegFormer", "MongoDB", "Flask", "Docker", "PyTorch", "RT-DETR"],
       references: [
@@ -798,7 +798,7 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
         </>
       ),
       period: "Jul 2023 — Ago 2022",
-      description: "Desarrollador de Machine Learning responsable del ciclo de vida completo de soluciones de **Deep Learning** para agricultura de precisión, cubriendo ingeniería de datos, estrategia de anotación, desarrollo de modelos, optimización y soporte para despliegue en producción. Trabajé con **Python** y **TensorFlow** para diseñar pipelines escalables para imágenes de drones a gran escala, supervisé procesos de calidad de datos, redacté documentación técnica exhaustiva y colaboré con equipos de backend, infraestructura y DevOps para operacionalizar modelos entrenados.",
+      description: "Desarrollador de Machine Learning responsable del ciclo de vida completo de soluciones de **Deep Learning** para agricultura de precisión, cubriendo ingeniería de datos, estrategia de anotación, desarrollo de modelos, optimización y soporte para despliegue en producción. Trabajar con **Python** y **TensorFlow** para diseñar pipelines escalables para imágenes de drones a gran escala, supervisar procesos de calidad de datos, redactar documentación técnica exhaustiva y colaborar con equipos de backend, infraestructura y DevOps para operacionalizar modelos entrenados.",
       details: `**Funciones**
 • Definir, entrenar y optimizar modelos de redes neuronales para **segmentación semántica** y **detección de objetos** utilizando **Python** y **TensorFlow**, asegurando alto rendimiento mediante pruebas y depuración sistemáticas.
 • Diseñar estrategias de adquisición de datos mediante ingeniería de consultas **SQL** en bases de datos **SQL Server** alojadas en infraestructura **Azure** para filtrar y recuperar **imágenes históricas de drones de resolución sub-métrica** (**GeoTIFF RGB**) basadas en criterios de fenología de plantación (edad, cobertura de maleza, fecha de adquisición).
@@ -816,7 +816,7 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
 • Mejoré la precisión de segmentación de caña de azúcar evolucionando el flujo de trabajo de un enfoque basado en índices de color (TGI) a un modelo de **segmentación semántica** personalizado **[DeepLabV3+](https://keras.io/examples/vision/deeplabv3_plus/)**, reduciendo significativamente falsos positivos causados por maleza sin comprometer la velocidad de procesamiento.
 • Reduje el tiempo de predicción en aproximadamente **9×** al actualizar de un flujo de trabajo secuencial **[Mask R-CNN](https://github.com/matterport/Mask_RCNN)** a una solución personalizada basada en **[RetinaNet](https://keras.io/examples/vision/retinanet/)** e implementar un pipeline de **multiprocesamiento** **Productor-Consumidor**.
 • Expandí las capacidades del modelo entrenando modelos adicionales **[DeepLabV3+](https://keras.io/examples/vision/deeplabv3_plus/)** para escenarios multiclase, incluyendo cultivos, suelo, residuos, maleza, piedras y cuerpos de agua.
-• Aumenté la confiabilidad del dataset y la estabilidad del entrenamiento reduciendo errores de anotación y etiquetas faltantes en **más del 80%** a través de procesos estrictos de QA, eliminación de duplicados y división controlada de datasets con aumentación.
+• Aumenté la confiabilidad del dataset y la estabilidad del entrenamiento reduciendo errores de anotación y etiquetas faltantes en **más del 80%** a través de procesos estrictos de QA, eliminación de duplicados y división controlada de datasets con aumento de datos.
 • Apoyé actividades de despliegue en producción entregando módulos de **Python** listos para backend y documentación técnica exhaustiva, acortando ciclos de integración y reduciendo retrabajo durante el lanzamiento del sistema.`,
       media: MANGLAR_MEDIA,
       technologies: ["Python", "TensorFlow", "Keras", "SQL Server", "Azure Servers", "Multiprocessing", "Linux"],
@@ -842,7 +842,7 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
         </>
       ),
       period: "Ago 2022 — Abr 2021",
-      description: "Generé, diseñé y probé funcionalidades de visión por computador, entornos de despliegue e infraestructura de hardware para aplicar redes neuronales artificiales a datos geoespaciales y satelitales. Exploré y supervisé el procesamiento de datos satelitales y tareas de sensores aerotransportados utilizando **Python** y herramientas GIS (**QGIS**, **ArcGIS Pro**). Produje documentación científica para respaldar la investigación y dirigí sesiones de transferencia de conocimiento para capacitar al personal del centro de investigación en **Machine Learning** y **Deep Learning**.",
+      description: "Generar, diseñar y probar funcionalidades de visión por computador, entornos de despliegue e infraestructura de hardware para aplicar redes neuronales artificiales a datos geoespaciales y satelitales. Explorar y supervisar el procesamiento de datos satelitales y tareas de sensores aerotransportados utilizando **Python** y herramientas GIS (**QGIS**, **ArcGIS Pro**). Producir documentación científica para respaldar la investigación y dirigir sesiones de transferencia de conocimiento para capacitar al personal del centro de investigación en **Machine Learning** y **Deep Learning**.",
       details: `**Funciones**
 • Realizar investigaciones y estudios de viabilidad sobre la aplicación de técnicas de **ML** y **Deep Learning** para detectar patrones de minería de oro a cielo abierto (remoción de tierra, piscinas químicas, maquinaria, dragas), progresando desde líneas base de **clustering de ML** a enfoques basados en **CNN**.
 • Evaluar, comparar y realizar benchmarking de arquitecturas de segmentación/instancia (**[Mask R-CNN](https://github.com/matterport/Mask_RCNN)** implementado en **TensorFlow** vs **[YOLACT](https://github.com/dbolya/yolact)** implementado en **PyTorch**), ejecutando **transfer learning**, **fine-tuning** y experimentos controlados para evaluar precisión, escalabilidad y restricciones de despliegue.
@@ -852,10 +852,10 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
 • Preparar informes científicos y consolidar metodología experimental y resultados para revisión por pares y adopción institucional; impartir capacitación práctica y transferencia de conocimiento al personal operativo.
 
 **Logros**
-• Mejoró la precisión de identificación de patrones mineros en **≥13% mAP** después de reorganizar el pipeline experimental y seleccionar **[Mask R-CNN](https://github.com/matterport/Mask_RCNN)** sobre **[YOLACT](https://github.com/dbolya/yolact)** basado en desempeño empírico y consideraciones de despliegue.
-• Redujo el tiempo de respuesta del análisis de grandes rasters satelitales y aéreos en **≥80%** mediante la entrega del prototipo de escritorio **PySide2** (visualización, auth, historial, exportación **GeoJSON**/**Shapefile**), permitiendo ciclos de validación y decisión mucho más rápidos para los analistas.
-• Disminuyó el esfuerzo de corrección y reetiquetado de datasets en **>50%** al hacer cumplir estándares estrictos de anotación, aplicando QA e introduciendo aumentación controlada, lo que estabilizó las iteraciones de reentrenamiento y redujo los ciclos de reetiquetado.
-• Consolidó los resultados de investigación en una publicación revisada por pares y permitió la adopción institucional (**[artículo presentado en IEEE COLCACI 2024](https://drive.google.com/file/d/1lRXvr_HzWHhUEXA-N07-I23jFKiWBqdV/view)**), facilitando la transferencia de tecnología dentro del centro de investigación.`,
+• Mejoré la precisión de identificación de patrones mineros en **≥13% mAP** después de reorganizar el pipeline experimental y seleccionar **[Mask R-CNN](https://github.com/matterport/Mask_RCNN)** sobre **[YOLACT](https://github.com/dbolya/yolact)** basado en desempeño empírico y consideraciones de despliegue.
+• Reduje el tiempo de respuesta del análisis de grandes rásteres satelitales y aéreos en **≥80%** mediante la entrega del prototipo de escritorio **PySide2** (visualización, auth, historial, exportación **GeoJSON**/**Shapefile**), permitiendo ciclos de validación y decisión mucho más rápidos para los analistas.
+• Disminuí el esfuerzo de corrección y reetiquetado de datasets en **>50%** al hacer cumplir estándares estrictos de anotación, aplicando QA e introduciendo aumento de datos controlado, lo que estabilizó las iteraciones de reentrenamiento y redujo los ciclos de reetiquetado.
+• Consolidé los resultados de investigación en una publicación revisada por pares y permitió la adopción institucional (**[artículo presentado en IEEE COLCACI 2024](https://drive.google.com/file/d/1lRXvr_HzWHhUEXA-N07-I23jFKiWBqdV/view)**), facilitando la transferencia de tecnología dentro del centro de investigación.`,
       media: CITAE_RESEARCHER_MEDIA,
       technologies: ["Python", "TensorFlow", "PyTorch", "PySide2", "Computer Vision", "QGIS", "ArcGIS Pro"],
       references: [

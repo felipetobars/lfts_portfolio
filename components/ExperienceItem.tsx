@@ -18,6 +18,15 @@ const ExperienceItem: React.FC<Props> = ({ data, lang }) => {
     e.currentTarget.src = "https://placehold.co/400x300/1e293b/94a3b8?text=Image+Unavailable";
   };
 
+  // Function to reverse period dates for mobile display
+  const reversePeriod = (period: string): string => {
+    const parts = period.split(' — ');
+    if (parts.length === 2) {
+      return `${parts[1]} — ${parts[0]}`;
+    }
+    return period;
+  };
+
   // Helper to parse links within a string segment
   // Supports [Label](Url) format
   const parseContentWithLinks = (content: string) => {
@@ -105,7 +114,12 @@ const ExperienceItem: React.FC<Props> = ({ data, lang }) => {
         <div className="absolute left-[-5px] sm:left-[7.2rem] top-10 w-3 h-3 rounded-full bg-slate-800 border-2 border-slate-600 group-hover:border-primary group-hover:bg-background transition-all duration-300 hidden sm:block z-10"></div>
 
         <div className="flex flex-col sm:flex-row items-start mb-1">
-          <div className="text-xs font-bold uppercase tracking-wide text-muted sm:absolute sm:left-0 sm:w-24 sm:text-right mt-1.5 group-hover:text-primary transition-colors">
+          {/* Mobile: Reversed dates */}
+          <div className="text-xs font-bold uppercase tracking-wide text-muted sm:hidden mt-1.5 group-hover:text-primary transition-colors">
+            {reversePeriod(data.period)}
+          </div>
+          {/* Desktop: Original dates */}
+          <div className="hidden sm:block text-xs font-bold uppercase tracking-wide text-muted sm:absolute sm:left-0 sm:w-24 sm:text-right mt-1.5 group-hover:text-primary transition-colors">
             {data.period}
           </div>
           <div className="sm:ml-4 w-full">

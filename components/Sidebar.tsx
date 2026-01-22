@@ -71,7 +71,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, isAtTop, data, navLink
           className="fixed inset-0 z-[110] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-200"
         >
           <div className="absolute inset-0" onClick={() => setIsCvModalOpen(false)}></div>
-          <div className="bg-slate-900 border border-slate-700 p-8 rounded-2xl shadow-2xl relative z-10 w-full max-w-sm transform scale-100 animate-in zoom-in-95 duration-200">
+          <div className="bg-slate-900 border border-slate-700 p-8 rounded-2xl shadow-2xl relative z-10 w-full max-w-md transform scale-100 animate-in zoom-in-95 duration-200">
             <button
               onClick={() => setIsCvModalOpen(false)}
               className="absolute top-4 right-4 text-slate-500 hover:text-white transition-colors"
@@ -79,32 +79,82 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, isAtTop, data, navLink
               <X size={20} />
             </button>
 
-            <h3 className="text-xl font-bold text-white mb-8 text-center tracking-tight">
-              {lang === 'en' ? 'Select Format' : 'Seleccionar Formato'}
+            <h3 className="text-xl font-bold text-white mb-2 text-center tracking-tight">
+              {lang === 'en' ? 'Download CV' : 'Descargar CV'}
             </h3>
 
-            <div className="grid grid-cols-2 gap-4">
-              <a
-                href="https://drive.google.com/file/d/1h00ciZ7D082Bq_elEX6pgUmG9zTKGfv8/view"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsCvModalOpen(false)}
-                className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-red-500/50 hover:bg-red-500/10 hover:text-red-400 transition-all duration-300 group"
-              >
-                <FileText className="w-8 h-8 group-hover:scale-110 transition-transform" />
-                <span className="font-bold text-sm">PDF</span>
-              </a>
+            <p className="text-xs text-slate-400 text-center mb-6">
+              {lang === 'en'
+                ? 'CV language matches page language'
+                : 'El idioma de la CV coincide con el idioma de la página'}
+            </p>
 
-              <a
-                href="https://drive.google.com/file/d/1GvAuuhaG1f4GlUefemZL2-meoPF9_fWf/view"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsCvModalOpen(false)}
-                className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-blue-500/10 hover:text-blue-400 transition-all duration-300 group"
-              >
-                <File className="w-8 h-8 group-hover:scale-110 transition-transform" />
-                <span className="font-bold text-sm">DOCX</span>
-              </a>
+            {/* ATS Version */}
+            <div className="mb-6">
+              <h4 className="text-sm font-bold text-primary mb-3 uppercase tracking-wide">
+                {lang === 'en' ? 'ATS Optimized' : 'Optimizada para ATS'}
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href={lang === 'en'
+                    ? "https://drive.google.com/file/d/1etO5c2mvboSLTDDasT8hLxv55xfxSQSk/view"
+                    : "https://drive.google.com/file/d/137jh9I3CIKsta1ViVu0raghTGR-qGZKB/view"}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsCvModalOpen(false)}
+                  className="flex flex-col items-center justify-center gap-2 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-red-500/50 hover:bg-red-500/10 hover:text-red-400 transition-all duration-300 group"
+                >
+                  <FileText className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                  <span className="font-bold text-xs">PDF</span>
+                </a>
+
+                <a
+                  href={lang === 'en'
+                    ? "https://drive.google.com/file/d/1vdVtOBTCUbucFkjk7LTSzhSp7h57EgZO/view"
+                    : "https://drive.google.com/file/d/1Eppcpj1rUkMDTG1OoYxTR7HYnZyP_nFi/view"}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsCvModalOpen(false)}
+                  className="flex flex-col items-center justify-center gap-2 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-blue-500/10 hover:text-blue-400 transition-all duration-300 group"
+                >
+                  <File className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                  <span className="font-bold text-xs">DOCX</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Normal Version */}
+            <div>
+              <h4 className="text-sm font-bold text-secondary mb-3 uppercase tracking-wide">
+                {lang === 'en' ? 'Standard' : 'Estándar'}
+              </h4>
+              <div className="grid grid-cols-2 gap-3">
+                <a
+                  href={lang === 'en'
+                    ? "https://drive.google.com/file/d/1m4ehAbm0sLAa0eN9l0zLL4LvvsPsy4Pm/view"
+                    : "https://drive.google.com/file/d/1XSceP_Dv3ZTgf9Sh4jiXSeseuHLKNU-6/view"}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsCvModalOpen(false)}
+                  className="flex flex-col items-center justify-center gap-2 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-red-500/50 hover:bg-red-500/10 hover:text-red-400 transition-all duration-300 group"
+                >
+                  <FileText className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                  <span className="font-bold text-xs">PDF</span>
+                </a>
+
+                <a
+                  href={lang === 'en'
+                    ? "https://drive.google.com/file/d/16LU_grNF5afKmTed7kaEI6OW-hqoahFd/view"
+                    : "https://drive.google.com/file/d/1TzAV2q7JLsB88jfyk_28Be2T4M5_DKPu/view"}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setIsCvModalOpen(false)}
+                  className="flex flex-col items-center justify-center gap-2 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-blue-500/10 hover:text-blue-400 transition-all duration-300 group"
+                >
+                  <File className="w-7 h-7 group-hover:scale-110 transition-transform" />
+                  <span className="font-bold text-xs">DOCX</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
