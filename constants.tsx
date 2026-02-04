@@ -446,7 +446,7 @@ My professional background is rooted in applied engineering and open-source meth
           <span className="text-slate-400"> - Cali, Colombia (Remote)</span>
         </>
       ),
-      period: "Present — Nov 2023",
+      period: "Feb 2026 — Nov 2023",
       description: "Lead a multidisciplinary software development team (**ML**, **Backend**, **Frontend**, and Annotators) in the design, testing, and deployment of advanced **computer vision** solutions for internal stakeholders. The role focuses on integrating **deep learning** models into production environments through robust web architectures and **REST APIs**, specifically optimized for large-scale geospatial and satellite data analysis. Key responsibilities include overseeing hardware infrastructure, managing the development lifecycle with **Docker Compose** and **MongoDB**, and ensuring high-efficiency execution on resource-constrained hardware.",
       details: `**Stage 1: Specialized Consultancy | Raster Analysis Optimization**
 (November 2023 – January 2024)
@@ -477,7 +477,7 @@ My professional background is rooted in applied engineering and open-source meth
 • Developed temporal analysis modules to track forest loss and recovery over time.
 
 **Stage 3: Hybrid Methodologies & Operational Automation**
-(November 2024 – Present)
+(November 2024 – February 2026)
 
 **Functions**
 • Design a hybrid neural network methodology to identify large linear infrastructure (paths) spanning multiple tiles.
@@ -738,7 +738,7 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
           <span className="text-slate-400"> - Cali, Colombia (Remoto)</span>
         </>
       ),
-      period: "Presente — Nov 2023",
+      period: "Feb 2026 — Nov 2023",
       description: "Liderar un equipo multidisciplinario de desarrollo de software (**ML**, **Backend**, **Frontend** y Anotadores) en el diseño, prueba y despliegue de soluciones avanzadas de **visión por computador** para partes interesadas internas. El rol se centra en la integración de modelos de **deep learning** en entornos de producción a través de arquitecturas web robustas y **APIs REST**, optimizadas específicamente para el análisis de datos geoespaciales y satelitales a gran escala. Las responsabilidades clave incluyen supervisar la infraestructura de hardware, gestionar el ciclo de vida de desarrollo con **Docker Compose** y **MongoDB**, y asegurar una ejecución de alta eficiencia en hardware con recursos limitados.",
       details: `**Etapa 1: Consultoría Especializada | Optimización de Análisis Raster**
 (Noviembre 2023 – Enero 2024)
@@ -769,7 +769,7 @@ Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodolo
 • Desarrollé módulos de análisis temporal para rastrear la pérdida y recuperación de bosque a lo largo del tiempo.
 
 **Etapa 3: Metodologías Híbridas y Automatización Operacional**
-(Noviembre 2024 – Presente)
+(Noviembre 2024 – Febrero 2026)
 
 **Funciones**
 • Diseñar una metodología de red neuronal híbrida para identificar gran infraestructura lineal (caminos) que abarca múltiples teselas.
