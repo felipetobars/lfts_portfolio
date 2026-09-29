@@ -12,13 +12,17 @@ const NeuralBackground: React.FC = () => {
 
     let width = window.innerWidth;
     let height = window.innerHeight;
+
+    // Cap DPR to avoid expensive high-density canvas rendering.
+    let dpr = Math.min(window.devicePixelRatio || 1, 1.25);
     
     // Configuration
     const particleColor = 'rgba(56, 189, 248,'; // Blue base
     const lineColor = 'rgba(16, 185, 129,'; // Emerald base
-    const particleCount = Math.floor((width * height) / 15000); // Responsive count
     const connectionDistance = 150;
     const mouseDistance = 200;
+    const connectionDistanceSq = connectionDistance * connectionDistance;
+    const mouseDistanceSq = mouseDistance * mouseDistance;
 
     interface Particle {
       x: number;
@@ -37,8 +41,12 @@ const NeuralBackground: React.FC = () => {
     const handleResize = () => {
       width = window.innerWidth;
       height = window.innerHeight;
-      canvas.width = width;
-      canvas.height = height;
+      dpr = Math.min(window.devicePixelRatio || 1, 1.25);
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       initParticles();
     };
 
@@ -56,7 +64,9 @@ const NeuralBackground: React.FC = () => {
     // Initialize particles
     const initParticles = () => {
       particles = [];
-      const count = Math.floor((window.innerWidth * window.innerHeight) / 15000); 
+      const area = window.innerWidth * window.innerHeight;
+      // Slightly lower density and hard cap to keep O(n^2) connections under control.
+      const count = Math.min(110, Math.floor(area / 22000));
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * width,
@@ -71,6 +81,7 @@ const NeuralBackground: React.FC = () => {
     };
 
     // Animation Loop
+    let rafId = 0;
     const animate = () => {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
@@ -88,10 +99,11 @@ const NeuralBackground: React.FC = () => {
         // 2. Mouse Interaction (The "Pinch" / Attraction)
         const dxMouse = mouse.x - p.x;
         const dyMouse = mouse.y - p.y;
-        const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
+        const distMouseSq = dxMouse * dxMouse + dyMouse * dyMouse;
 
-        if (distMouse < mouseDistance) {
+        if (distMouseSq < mouseDistanceSq && distMouseSq > 0.0001) {
           // Calculate pull force (stronger when closer)
+          const distMouse = Math.sqrt(distMouseSq);
           const forceDirectionX = dxMouse / distMouse;
           const forceDirectionY = dyMouse / distMouse;
           const force = (mouseDistance - distMouse) / mouseDistance;
@@ -108,7 +120,7 @@ const NeuralBackground: React.FC = () => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         // Opacity based on mouse proximity
-        const opacity = distMouse < mouseDistance ? 0.8 : 0.3;
+        const opacity = distMouseSq < mouseDistanceSq ? 0.8 : 0.3;
         ctx.fillStyle = `${particleColor} ${opacity})`;
         ctx.fill();
 
@@ -117,15 +129,15 @@ const NeuralBackground: React.FC = () => {
           const p2 = particles[j];
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
+          const distanceSq = dx * dx + dy * dy;
 
-          if (distance < connectionDistance) {
+          if (distanceSq < connectionDistanceSq) {
             ctx.beginPath();
-            // Line opacity based on distance between particles AND proximity to mouse
-            let lineOpacity = 1 - distance / connectionDistance;
+            // Line opacity based on squared distance and mouse proximity.
+            let lineOpacity = 1 - distanceSq / connectionDistanceSq;
             
             // Highlight lines near mouse
-            if (distMouse < mouseDistance) {
+            if (distMouseSq < mouseDistanceSq) {
                 lineOpacity += 0.3; 
             } else {
                 lineOpacity *= 0.15; // Dim lines far from mouse
@@ -140,12 +152,15 @@ const NeuralBackground: React.FC = () => {
         }
       });
 
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
 
     // Setup
-    canvas.width = width;
-    canvas.height = height;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     initParticles();
     animate();
 
@@ -154,6 +169,7 @@ const NeuralBackground: React.FC = () => {
     window.addEventListener('mouseout', handleMouseLeave);
 
     return () => {
+      cancelAnimationFrame(rafId);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseout', handleMouseLeave);
