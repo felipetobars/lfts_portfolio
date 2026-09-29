@@ -165,7 +165,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, isAtTop, data, navLink
         className="lg:fixed lg:left-0 lg:top-0 lg:h-screen lg:w-96 w-full bg-slate-900/80 backdrop-blur-md border-r border-slate-800 text-slate-300 flex flex-col z-50 transition-all duration-300 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent"
       >
         {/* Decorative gradient blob */}
-        <div className="absolute top-0 left-0 w-full h-64 bg-primary/10 blur-3xl -z-10 rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-r from-primary/15 to-secondary/15 blur-3xl -z-10 rounded-full pointer-events-none"></div>
 
         {/* Profile Header */}
         <div className="p-8 lg:p-10 flex flex-col items-start space-y-5 flex-shrink-0 relative">
@@ -260,22 +260,22 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, isAtTop, data, navLink
 
           <div className="flex gap-4 mt-6">
             {data.contact.linkedin && (
-              <a href={data.contact.linkedin} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-primary hover:text-primary hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all duration-300" title="LinkedIn">
+              <a href={data.contact.linkedin} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-all duration-300" title="LinkedIn">
                 {ICONS.Linkedin}
               </a>
             )}
             {data.contact.github && (
-              <a href={data.contact.github} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-primary hover:text-primary hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all duration-300" title="GitHub">
+              <a href={data.contact.github} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-all duration-300" title="GitHub">
                 {ICONS.Github}
               </a>
             )}
             {data.contact.orcid && (
-              <a href={data.contact.orcid} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-primary hover:text-primary hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all duration-300" title="ORCID">
+              <a href={data.contact.orcid} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-all duration-300" title="ORCID">
                 {ICONS.Orcid}
               </a>
             )}
             {data.contact.researchgate && (
-              <a href={data.contact.researchgate} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-primary hover:text-primary hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all duration-300" title="ResearchGate">
+              <a href={data.contact.researchgate} target="_blank" rel="noreferrer" className="p-2 bg-slate-800 border border-slate-700 rounded-lg hover:border-secondary hover:text-secondary hover:shadow-[0_0_15px_rgba(16,185,129,0.25)] transition-all duration-300" title="ResearchGate">
                 {ICONS.ResearchGate}
               </a>
             )}

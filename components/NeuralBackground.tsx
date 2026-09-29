@@ -14,8 +14,8 @@ const NeuralBackground: React.FC = () => {
     let height = window.innerHeight;
     
     // Configuration
-    const particleColor = 'rgba(56, 189, 248,'; // Primary color (Sky-400) base
-    const lineColor = 'rgba(129, 140, 248,'; // Secondary color (Indigo-400) base
+    const particleColor = 'rgba(56, 189, 248,'; // Blue base
+    const lineColor = 'rgba(16, 185, 129,'; // Emerald base
     const particleCount = Math.floor((width * height) / 15000); // Responsive count
     const connectionDistance = 150;
     const mouseDistance = 200;

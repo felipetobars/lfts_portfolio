@@ -408,7 +408,7 @@ const DATA_EN: ResumeData = {
     { label: "Deep Learning", url: URLS.deepLearning },
     { label: "CAD", url: URLS.cad }
   ],
-  about: `Mechatronics Engineer and Artificial Intelligence Specialist with more than 4 years of experience in the research and development of Python-based software. In my role as a Technical Lead, I focus on the entire journey of Machine Learning and Computer Vision projects, taking them from the first experimental benchmarks to a fully deployed, production-ready state.
+  about: `Mechatronics Engineer and Artificial Intelligence Specialist with more than 5 years of experience in the research and development of Python-based software. In my role as a Technical Lead, I focus on the entire journey of Machine Learning and Computer Vision projects, taking them from the first experimental benchmarks to a fully deployed, production-ready state.
 
 My work is centered on connecting deep learning research with solid software engineering. Throughout my career, I have focused on:
 
@@ -429,6 +429,32 @@ My professional background is rooted in applied engineering and open-source meth
     researchgate: "https://www.researchgate.net/profile/Luis-Tobar-2",
   },
   experience: [
+    {
+      id: "seti-ai-engineer",
+      role: "Artificial Intelligence Engineer",
+      company: (
+        <>
+          <LinkPreview href="https://seti.com.co/" className="hover:text-primary hover:underline transition-colors">SETI S.A.S.</LinkPreview>
+          <span className="text-slate-400"> - Medellin, Colombia (Remote)</span>
+        </>
+      ),
+      period: "Feb 2026 — Present",
+      description: "Contribute to the design and implementation of AI solutions that transform internal operations and client-facing products. Build end-to-end agentic systems with robust state handling, memory, and multi-agent orchestration, while integrating multimodal AI services and cloud-native backend architectures under Spec-Driven Development and agile sprint execution.",
+      details: `**Functions**
+• Contribute to the design and implementation of AI solutions for internal operations and customer-facing products.
+• Develop end-to-end **agentic systems** with state management, memory strategies, and multi-agent orchestration.
+• Build **RAG pipelines** with vector embeddings and vector databases for semantic search and contextual retrieval.
+• Integrate multimodal services including computer vision, **STT**, and **TTS** into production AI workflows.
+• Implement and consume cloud AI services within backend architectures across **AWS**, **Azure**, and **OCI** ecosystems.
+• Develop under **Spec-Driven Development (SDD)** and software engineering best practices to ensure maintainable, production-ready solutions.
+• Build intelligent flows and agent interfaces using **LangChain** and **LangGraph** in agile sprint-based delivery cycles.
+
+**Highlighted Initiatives**
+• ITSM requirements management assistant with agentic interfaces for request understanding, triage, and operational support.
+• Event-focused AI solutions for enterprise showcases, including **Aval Tech Week** and **Corficolombia** initiatives.
+• References: [Aval Tech Week](https://lnkd.in/p/dvfdbC9n) | [Corficolombia](https://lnkd.in/p/dSkBKBF9)`,
+      technologies: ["LangChain", "LangGraph", "Qdrant", "Docker", "AWS Bedrock", "AgentCore", "DynamoDB", "Lambda", "S3", "CloudFront", "Azure AI Foundry", "Azure AI Services", "Azure Functions", "Cosmos DB", "OCI Vision", "RAG", "STT", "TTS", "SDD"]
+    },
     {
       id: "codaltec-lead",
       role: "Technical Lead & Machine Learning Developer",
@@ -708,7 +734,7 @@ const DATA_ES: ResumeData = {
     { label: "Deep Learning", url: URLS.deepLearning },
     { label: "CAD", url: URLS.cad }
   ],
-  about: `Ingeniero Mecatrónico y Especialista en Inteligencia Artificial con más de 4 años de experiencia en investigación y desarrollo de software basado en Python. En mi rol como Líder Técnico, me enfoco en el ciclo completo de proyectos de Machine Learning y Visión por Computadora, llevándolos desde las primeras pruebas experimentales hasta un estado completamente desplegado y listo para producción.
+  about: `Ingeniero Mecatrónico y Especialista en Inteligencia Artificial con más de 5 años de experiencia en investigación y desarrollo de software basado en Python. En mi rol como Líder Técnico, me enfoco en el ciclo completo de proyectos de Machine Learning y Visión por Computadora, llevándolos desde las primeras pruebas experimentales hasta un estado completamente desplegado y listo para producción.
 
 Mi trabajo se centra en conectar la investigación de deep learning con una ingeniería de software sólida. A lo largo de mi carrera, me he enfocado en:
 
@@ -721,6 +747,32 @@ Mi trabajo se centra en conectar la investigación de deep learning con una inge
 Mi trayectoria profesional está arraigada en la ingeniería aplicada y metodologías de código abierto. Este camino comenzó como investigador en el grupo de Robótica y Sistemas Autónomos (RAS) en la Universidad Autónoma de Occidente y continuó a través de roles clave en Manglar (CNX SAS) y CITAE. Mi objetivo siempre es transformar tecnología compleja en herramientas prácticas de alta eficiencia que simplifiquen la toma de decisiones y aseguren una transferencia de conocimiento efectiva dentro de los equipos técnicos.`,
   contact: DATA_EN.contact,
   experience: [
+    {
+      id: "seti-ai-engineer",
+      role: "Ingeniero de Inteligencia Artificial | Especialista IA",
+      company: (
+        <>
+          <LinkPreview href="https://seti.com.co/" className="hover:text-primary hover:underline transition-colors">SETI S.A.S.</LinkPreview>
+          <span className="text-slate-400"> - Medellin, Colombia (Remoto)</span>
+        </>
+      ),
+      period: "Feb 2026 — Actualidad",
+      description: "Contribuir al diseño e implementación de soluciones de IA que transforman operaciones internas y productos para clientes. Desarrollar sistemas agénticos end-to-end con manejo de estado, memoria y orquestación multiagente, integrando servicios multimodales y arquitecturas backend en la nube bajo enfoque Spec-Driven Development y trabajo ágil por sprints.",
+      details: `**Funciones**
+• Contribuir al diseño e implementación de soluciones de IA para operaciones internas y productos orientados al cliente.
+• Desarrollar **sistemas agénticos** end-to-end con gestión de estado, estrategias de memoria y orquestación de múltiples agentes.
+• Construir **pipelines RAG** con embeddings vectoriales y bases de datos vectoriales para búsqueda semántica y recuperación contextual.
+• Integrar servicios multimodales como visión por computadora, **STT** y **TTS** en flujos de IA listos para producción.
+• Implementar y consumir servicios de IA en la nube dentro de arquitecturas backend sobre ecosistemas **AWS**, **Azure** y **OCI**.
+• Desarrollar bajo **Spec-Driven Development (SDD)** y buenas prácticas de ingeniería para garantizar soluciones mantenibles y listas para producción.
+• Construir flujos inteligentes e interfaces agénticas con **LangChain** y **LangGraph** dentro de una metodología ágil por sprints.
+
+**Iniciativas Destacadas**
+• Asistente para gestión de requerimientos ITSM con interfaces agénticas para entendimiento, priorización y soporte operativo.
+• Soluciones de IA orientadas a eventos corporativos, incluyendo iniciativas para **Aval Tech Week** y **Corficolombia**.
+• Referencias: [Aval Tech Week](https://lnkd.in/p/dvfdbC9n) | [Corficolombia](https://lnkd.in/p/dSkBKBF9)`,
+      technologies: ["LangChain", "LangGraph", "Qdrant", "Docker", "AWS Bedrock", "AgentCore", "DynamoDB", "Lambda", "S3", "CloudFront", "Azure AI Foundry", "Azure AI Services", "Azure Functions", "Cosmos DB", "OCI Vision", "RAG", "STT", "TTS", "SDD"]
+    },
     {
       id: "codaltec-lead",
       role: "Líder Técnico y Desarrollador de Machine Learning",

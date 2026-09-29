@@ -22,6 +22,10 @@ const ExperienceItem: React.FC<Props> = ({ data, lang }) => {
   const reversePeriod = (period: string): string => {
     const parts = period.split(' — ');
     if (parts.length === 2) {
+      const end = parts[1].toLowerCase();
+      if (end.includes('present') || end.includes('actualidad')) {
+        return period;
+      }
       return `${parts[1]} — ${parts[0]}`;
     }
     return period;
